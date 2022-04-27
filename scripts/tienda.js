@@ -40,8 +40,8 @@ function addToCartClicked(event) {
 
     // CREO LAS VARIABLES PARA CADA VALOR DEL OBJETO
 
-    const itemTitle = item.querySelector(`.item-title`).textContent;
-    const itemPrice = item.querySelector(`item.price`).textContent;
+    const itemTitle = item.querySelector(`.item-title`);
+    const itemPrice = item.querySelector(`item.price`);
 
     //TESTEO
     console.log(`:o : addToCartClicked -> item-title`, itemTitle, itemPrice);
