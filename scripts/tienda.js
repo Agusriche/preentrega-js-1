@@ -1,10 +1,10 @@
-console.log("a");
+// console.log("a");
 
 // SI TRAE LA A ANDA
 
 const addToShoppingCartButtons = document.querySelectorAll(`.addToCart`);
 
-console.log(`addToShoppingCartButtons`, addToShoppingCartButtons);
+// console.log(`addToShoppingCartButtons`, addToShoppingCartButtons);
 // CONSOLA PARA CHEQUEAR QUE TRAIGA EL ARRAY
 
 // addToShoppingCartButtons.forEach(addToCardButton => {
@@ -40,8 +40,9 @@ function addToCartClicked(event) {
 
     // CREO LAS VARIABLES PARA CADA VALOR DEL OBJETO
 
-    const itemTitle = item.querySelector(`.item-tittle`);
+    const itemTitle = item.querySelector(`.item-title`).textContent;
+    const itemPrice = item.querySelector(`item.price`).textContent;
 
     //TESTEO
-    console.log(`:o : addToCartClicked -> item-tittle`, itemTitle);
+    console.log(`:o : addToCartClicked -> item-title`, itemTitle, itemPrice);
 }
